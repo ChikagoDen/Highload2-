@@ -1,0 +1,4 @@
+172.21.0.1 - - [12/Sep/2022:10:37:15 +0000] "GET / HTTP/2.0" 200 17587 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:104.0) Gecko/20100101 Firefox/104.0"
+172.21.0.1 - - [12/Sep/2022:10:37:15 +0000] "GET /favicon.ico HTTP/2.0" 200 0 "https://172.17.0.1/" "Mozilla/5.0 (X11; Linux x86_64; rv:104.0) Gecko/20100101 Firefox/104.0"
+172.21.0.1 - - [12/Sep/2022:10:37:19 +0000] "GET / HTTP/2.0" 200 17587 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:104.0) Gecko/20100101 Firefox/104.0"
+172.21.0.1 - - [12/Sep/2022:10:37:19 +0000] "GET /favicon.ico HTTP/2.0" 200 0 "https://localhost/" "Mozilla/5.0 (X11; Linux x86_64; rv:104.0) Gecko/20100101 Firefox/104.0"
