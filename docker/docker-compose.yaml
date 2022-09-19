@@ -25,6 +25,7 @@ services:
                 - redis
                 - memcached
                 - db-master
+                - db-sms
 
         nginx:
             container_name: nginx
@@ -72,25 +73,6 @@ services:
                 - ./db/master/master.sql:/docker-entrypoint-initdb.d/start.sql
                 - ./db/master/mysql.master.cnf:/etc/mysql/conf.d/mysql.master.cnf
                 - ./db/master/.data/mysql:/var/lib/mysql:rw
-            networks:
-                - den-network
-
-                #        percona-db:
-#            container_name: percona-db
-#            image: percona:latest
-#            env_file:
-#                - ./db/master/.env.master
-#            ports:
-#                - "5406:3306"
-#            networks:
-#                - den-network
-        mariadb-db:
-            container_name: mariadb-db
-            image: mariadb:latest
-            env_file:
-                - ./db/master/.env.master
-            ports:
-                - "6601:3306"
             networks:
                 - den-network
 
