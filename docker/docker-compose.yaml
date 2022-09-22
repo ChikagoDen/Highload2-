@@ -52,6 +52,7 @@ services:
         redis:
             container_name: redis
             image: redis:latest
+
             networks:
                 - den-network
 
@@ -60,6 +61,7 @@ services:
             image: memcached:latest
             networks:
                 - den-network
+
 
         db-master:
             container_name: db-master
