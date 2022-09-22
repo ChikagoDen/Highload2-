@@ -144,3 +144,8 @@
 172.21.0.1 - - [22/Sep/2022:10:03:43 +0000] "GET /clear HTTP/2.0" 200 20 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:104.0) Gecko/20100101 Firefox/104.0"
 172.21.0.1 - - [22/Sep/2022:10:03:53 +0000] "GET /redis HTTP/2.0" 500 16910 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:104.0) Gecko/20100101 Firefox/104.0"
 172.21.0.1 - - [22/Sep/2022:10:05:08 +0000] "GET /memcache HTTP/2.0" 500 16992 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:104.0) Gecko/20100101 Firefox/104.0"
+172.21.0.1 - - [22/Sep/2022:10:10:46 +0000] "GET /memcache HTTP/2.0" 500 16994 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:104.0) Gecko/20100101 Firefox/104.0"
+172.21.0.1 - - [22/Sep/2022:10:10:51 +0000] "GET / HTTP/2.0" 200 17587 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:104.0) Gecko/20100101 Firefox/104.0"
+172.21.0.1 - - [22/Sep/2022:10:11:00 +0000] "GET / HTTP/2.0" 200 17587 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:104.0) Gecko/20100101 Firefox/104.0"
+172.21.0.1 - - [22/Sep/2022:10:11:00 +0000] "GET /favicon.ico HTTP/2.0" 200 0 "https://localhost/" "Mozilla/5.0 (X11; Linux x86_64; rv:104.0) Gecko/20100101 Firefox/104.0"
+172.21.0.1 - - [22/Sep/2022:10:11:51 +0000] "GET / HTTP/2.0" 200 17587 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:104.0) Gecko/20100101 Firefox/104.0"
