@@ -25,6 +25,25 @@ services:
                 - redis
                 - memcached
                 - db-master
+        den2:
+            container_name: den1
+            build:
+                context: ./php-fpm
+                args:
+                    - timezone=${TZ}
+            networks:
+                - den-network
+            ports:
+                - "901:9000"
+            volumes:
+                - ./../den:/den:rw,cached
+                - den_log:/den/var/log
+            env_file:
+                - .env
+            depends_on:
+                - redis
+                - memcached
+                - db-master
 
         nginx:
             container_name: nginx
