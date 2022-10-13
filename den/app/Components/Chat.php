@@ -2,34 +2,50 @@
 
 namespace App\Components;
 
+use Exception;
 use Ratchet\ConnectionInterface;
 use Ratchet\RFC6455\Messaging\MessageInterface;
 use Ratchet\WebSocket\MessageComponentInterface;
+use SplObjectStorage;
 
 class Chat implements MessageComponentInterface
 {
-    protected $client;
+    protected SplObjectStorage $client;
     public function __construct()
     {
+        $this->client = new SplObjectStorage();
     }
 
     function onOpen(ConnectionInterface $conn)
     {
-        // TODO: Implement onOpen() method.
+        $this->client->attach($conn);
+        echo "new connect".$conn;
     }
 
     function onClose(ConnectionInterface $conn)
     {
-        // TODO: Implement onClose() method.
+        $this->client->detach($conn);
+        echo "close connect";
     }
 
-    function onError(ConnectionInterface $conn, \Exception $e)
+    function onError(ConnectionInterface $conn, Exception $e)
     {
-        // TODO: Implement onError() method.
+        echo "close connect".$e->getMessage();
     }
 
     public function onMessage(ConnectionInterface $conn, MessageInterface $msg)
     {
-        // TODO: Implement onMessage() method.
+        $clientCount=$this->client->count();
+        echo sprintf('Connect %d sending message "%s" to %d other connection %s',
+        $conn,
+        $msg,
+        $clientCount,
+            $clientCount ===1?'':'%s');
+        foreach ($this->client as $cl)
+        {
+            if($conn !== $cl){
+                $cl->send($msg);
+            }
+        }
     }
 }
