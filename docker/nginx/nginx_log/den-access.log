@@ -2079,3 +2079,6 @@
 172.21.0.1 - - [23/Sep/2022:16:45:07 +0000] "GET / HTTP/1.1" 499 0 "-" "Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.7"
 172.21.0.1 - - [23/Sep/2022:16:45:07 +0000] "GET / HTTP/1.1" 499 0 "-" "Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.7"
 172.21.0.1 - - [23/Sep/2022:16:45:07 +0000] "GET / HTTP/1.1" 499 0 "-" "Mozilla/5.0 (pc-x86_64-linux-gnu) Siege/4.0.7"
+172.21.0.1 - - [13/Oct/2022:13:42:20 +0000] "GET / HTTP/2.0" 200 17587 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:105.0) Gecko/20100101 Firefox/105.0"
+172.21.0.1 - - [13/Oct/2022:13:42:20 +0000] "GET /favicon.ico HTTP/2.0" 200 0 "https://laravel.test.ru/" "Mozilla/5.0 (X11; Linux x86_64; rv:105.0) Gecko/20100101 Firefox/105.0"
+172.21.0.1 - - [13/Oct/2022:13:42:26 +0000] "GET / HTTP/2.0" 200 17587 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:105.0) Gecko/20100101 Firefox/105.0"
