@@ -1,8 +1,10 @@
 <?php
-require '../vendor/autoload.php';
+require dirname(__DIR__).'/vendor/autoload.php';
+use App\Components\Chat;
+use Ratchet\Server\IoServer;
 
-$server=\Ratchet\Server\IoServer::factory(
-    new \App\Components\Chat(),
+$server=IoServer::factory(
+    new Chat(),
     port: 8181
 );
 $server->run();

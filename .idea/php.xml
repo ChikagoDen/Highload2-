@@ -108,6 +108,8 @@
       <path value="$PROJECT_DIR$/den/vendor/symfony/http-foundation" />
       <path value="$PROJECT_DIR$/den/vendor/myclabs/deep-copy" />
       <path value="$PROJECT_DIR$/den/vendor/spatie/backtrace" />
+      <path value="$PROJECT_DIR$/den/vendor/symfony/polyfill-uuid" />
+      <path value="$PROJECT_DIR$/den/vendor/symfony/uid" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.0" />

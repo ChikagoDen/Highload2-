@@ -3,9 +3,10 @@
 namespace App\Components;
 
 use Exception;
+
+use Ratchet\MessageComponentInterface;
 use Ratchet\ConnectionInterface;
-use Ratchet\RFC6455\Messaging\MessageInterface;
-use Ratchet\WebSocket\MessageComponentInterface;
+
 use SplObjectStorage;
 
 class Chat implements MessageComponentInterface
@@ -33,7 +34,7 @@ class Chat implements MessageComponentInterface
         echo "close connect".$e->getMessage();
     }
 
-    public function onMessage(ConnectionInterface $conn, MessageInterface $msg)
+    public function onMessage(ConnectionInterface $conn, $msg)
     {
         $clientCount=$this->client->count();
         echo sprintf('Connect %d sending message "%s" to %d other connection %s',

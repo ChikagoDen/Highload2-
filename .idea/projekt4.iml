@@ -114,6 +114,8 @@
       <excludeFolder url="file://$MODULE_DIR$/den/vendor/symfony/http-foundation" />
       <excludeFolder url="file://$MODULE_DIR$/den/vendor/myclabs/deep-copy" />
       <excludeFolder url="file://$MODULE_DIR$/den/vendor/spatie/backtrace" />
+      <excludeFolder url="file://$MODULE_DIR$/den/vendor/symfony/polyfill-uuid" />
+      <excludeFolder url="file://$MODULE_DIR$/den/vendor/symfony/uid" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
